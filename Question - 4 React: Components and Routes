@@ -1,0 +1,20 @@
+Which component will load when the Route '/signin' is requested from this React Router?
+
+Code:
+
+<BrowserRouter>
+    <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+</BrowserRouter>
+
+
+Answer:
+
+<Route path="*" element={<NotFoundPage />} />
